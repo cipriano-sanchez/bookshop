@@ -14,7 +14,9 @@
   },
   "dependencies": {
     "@sap/cds": "^7",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
   },
   "scripts": {
     "genres": "cds serve test/genres.cds",
