@@ -38,6 +38,19 @@ describe('Bookshop: OData Protocol Level Testing', () => {
       .expect('Content-Type', /^application\/json/)
       .expect(200)
 
+      // define an array of expected books
+      const books = [
+        { title: 'Wuthering Heights', author: 'Emily Bronte' },
+        { title: 'Jane Eyre', author: 'Charlotte Bronte' },
+        { title: 'The Raven', author: 'Edgar Allen Poe' },
+        { title: 'Eleonora', author: 'Edgar Allen Poe' },
+        { title: 'Catweazle', author: 'Richard Carpenter' }
+      ]
+      
+      // check if the response contains the expected books
+      expect(response.body.value).toMatchObject(books)
+
+
   })
 })
 

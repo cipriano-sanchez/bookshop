@@ -21,3 +21,15 @@ entity Authors : managed {
   placeOfDeath : String;
   books        : Association to many Books on books.author = $self;
 }
+
+// define CAP Entity called Genres using aspect CodeList
+// with only the following attributes
+// ID as a key
+// parent as association to itself
+// children as association to many Genres
+entity Genres : sap.common.CodeList {
+  key ID      : Integer;
+  parent     : Association to Genres;
+  children   : Association to many Genres on children.parent = $self;
+}
+
