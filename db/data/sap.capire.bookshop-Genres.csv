@@ -1,16 +1,16 @@
-ID,parent_ID,name
+ID,parent_ID,name,descr
 10,,Fiction
-11,10,Drama
-12,10,Poetry
-13,10,Fantasy
-14,10,Science Fiction
-15,10,Romance
-16,10,Mystery
-17,10,Thriller
-18,10,Dystopia
-19,10,Fairy Tale
+11,10,Drama,"Very dramatic book"
+12,10,Poetry,"Very poetic book"
+13,10,Fantasy,"Very fantastic book"
+14,10,Science Fiction,"Very scientific book"
+15,10,Romance,"Very romantic book"
+16,10,Mystery,"Very mysterious book"
+17,10,Thriller,"Very thrilling book"
+18,10,Dystopia,"Very dystopian book"
+19,10,Fairy Tale,"Very fairy book"
 20,,Non-Fiction
-21,20,Biography
-22,21,Autobiography
-23,20,Essay
-24,20,Speech
+21,20,Biography,"Very biographical book"
+22,21,Autobiography,"Very autobiographical book"
+23,20,Essay,"Very essay book" 
+24,20,Speech,"Very speech book"
