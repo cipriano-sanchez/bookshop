@@ -14,7 +14,4 @@ service CatalogService @(path:'/browse') {
   action submitOrder ( book: Books:ID, quantity: Integer ) returns { stock: Integer };
   event OrderedBook : { book: Books:ID; quantity: Integer; buyer: String };
 
-  // write a cap service for entity Genres
-  @readonly entity Genres as projection on my.Genres;
-
 }
