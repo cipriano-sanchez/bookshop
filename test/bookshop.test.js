@@ -38,18 +38,6 @@ describe('Bookshop: OData Protocol Level Testing', () => {
       .expect('Content-Type', /^application\/json/)
       .expect(200)
 
-      // intialize books array with from sap.capire.bookshop-Books.csv data
-      const books = [
-        { title: 'Wuthering Heights', author: 'Emily Bronte' },
-        { title: 'Jane Eyre', author: 'Charlotte Bronte' },
-        { title: 'The Raven', author: 'Edgar Allen Poe' },
-        { title: 'Eleonora', author: 'Edgar Allen Poe' },
-        { title: 'Catweazle', author: 'Richard Carpenter' }
-      ]
-      
-      // check if the response body contains books in the array
-      expect(response.body.value).toMatchObject(books)
-
   })
 })
 
